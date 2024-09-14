@@ -18,6 +18,7 @@ searchObject = new Searsh_Page(driver);
 detailsObject=new ProductDetails_Page(driver);
 searchObject.ProductSearch(ProductName);
 searchObject.OpenProductDetailsPage();
+        System.out.println("Hello");
 
         //  Assert.assertTrue(detailsObject.productNameBreadCrumb.getText().equalsIgnoreCase(ProductName));
         Assert.assertEquals(detailsObject.productNameBreadCrumb.getText(),ProductName);

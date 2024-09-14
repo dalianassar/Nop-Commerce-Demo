@@ -31,6 +31,7 @@ public class MyAccoun_tTest extends TestBase
         registerObject = new UserRegisteration(driver);
         registerObject.UserRegisteration("Dalia", "dalia145@outlook.com","Nassar" , "1234567" );
         Assert.assertTrue(registerObject.SuccessMessage.getText().contains("Your registration completed"));
+        System.out.println("Dalia Nassar");
 }
     @Test(priority = 2)
     public void RegisteredUserCanChangePassword() throws InterruptedException {
